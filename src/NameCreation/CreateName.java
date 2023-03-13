@@ -1,24 +1,11 @@
+package NameCreation;
+
 import java.util.ArrayList;
 import java.util.Random;
 
-public class CreateProjectName {
+public class CreateName {
 
-    private static int changeFromStrToInt(String str) {
-        int result = 0;
-
-        for(int i = 0; i < str.length(); ++i) {
-            if (str.charAt(i) < '0' || str.charAt(i) > '9') {
-                return -1;
-            }
-
-            result += result * 10 + (str.charAt(i) - 48);
-        }
-
-        return result;
-    }
-
-    public static void main(String[] args) {
-        int times = changeFromStrToInt(args[0]);
+    public static void create(int times) {
 
         if (times == -1) return;
 

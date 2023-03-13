@@ -1,5 +1,5 @@
 @echo off
 
-if not exist C:\Users\abdul\Documents\EasyToAccessProjects\CreateProjectName\CreateProjectName.class javac CreateProjectName.java
+if not exist C:\Users\abdul\Documents\codes\NameCreation.CreateName\srd\main.class javac src\Main.java -Xlint:none
 
-java CreateProjectName %1
+java \src\Main %1
