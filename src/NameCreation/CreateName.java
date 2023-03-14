@@ -5,9 +5,9 @@ import java.util.Random;
 
 public class CreateName {
 
-    public static void create(int times) {
+    public static String create(int times) {
 
-        if (times == -1) return;
+        if (times == -1) return "";
 
         Random rd = new Random();
         String result = "";
@@ -36,7 +36,25 @@ public class CreateName {
             flag = !flag;
         }
 
-        System.out.println(result);
+        return result;
         
+    }
+
+    public static int StrToInt(String text) {
+
+        int result = 0;
+
+        for (int i = 0; i < text.length(); i++) {
+
+            char currChar = text.charAt(i);
+
+            result += currChar - '0';
+            result *= 10;
+
+        }
+        result /= 10;
+
+        return result;
+
     }
 }
